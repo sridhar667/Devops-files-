@@ -1,0 +1,37 @@
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ touch {1..20}.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+1.txt   11.txt  13.txt  15.txt  17.txt  19.txt  20.txt  4.txt  6.txt  8.txt
+10.txt  12.txt  14.txt  16.txt  18.txt  2.txt   3.txt   5.txt  7.txt  9.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ rm -rf
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+1.txt   11.txt  13.txt  15.txt  17.txt  19.txt  20.txt  4.txt  6.txt  8.txt
+10.txt  12.txt  14.txt  16.txt  18.txt  2.txt   3.txt   5.txt  7.txt  9.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ rm -rf *
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ touch example{1..20}.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+example1.txt   example12.txt  example15.txt  example18.txt  example20.txt  example5.txt  example8.txt
+example10.txt  example13.txt  example16.txt  example19.txt  example3.txt   example6.txt  example9.txt
+example11.txt  example14.txt  example17.txt  example2.txt   example4.txt   example7.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ mv example{1..5}.txt example{1..5}.yaml
+mv: target 'example5.yaml' is not a directory
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+example1.txt   example12.txt  example15.txt  example18.txt  example20.txt  example5.txt  example8.txt
+example10.txt  example13.txt  example16.txt  example19.txt  example3.txt   example6.txt  example9.txt
+example11.txt  example14.txt  example17.txt  example2.txt   example4.txt   example7.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ mv example1.txt example1.yaml
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+example1.yaml  example12.txt  example15.txt  example18.txt  example20.txt  example5.txt  example8.txt
+example10.txt  example13.txt  example16.txt  example19.txt  example3.txt   example6.txt  example9.txt
+example11.txt  example14.txt  example17.txt  example2.txt   example4.txt   example7.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ mv example2.txt example2.yaml
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ mv example3.txt example3.yaml
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ mv example4.txt example4.yaml
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ mv example5.txt example5.yaml
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+example1.yaml  example12.txt  example15.txt  example18.txt  example20.txt  example5.yaml  example8.txt
+example10.txt  example13.txt  example16.txt  example19.txt  example3.yaml  example6.txt   example9.txt
+example11.txt  example14.txt  example17.txt  example2.yaml  example4.yaml  example7.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls *yaml
+example1.yaml  example2.yaml  example3.yaml  example4.yaml  example5.yaml
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$
