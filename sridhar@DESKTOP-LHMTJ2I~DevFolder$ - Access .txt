@@ -1,0 +1,22 @@
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ touch demo.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls
+demo.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ mkdir test
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls -lsrt
+total 4
+0 -rw-r--r-- 1 sridhar sridhar    0 Mar 12 18:52 demo.txt
+4 drwxr-xr-x 2 sridhar sridhar 4096 Mar 12 18:53 test
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls -lart
+total 12
+drwxr-x--- 4 sridhar sridhar 4096 Mar  9 10:55 ..
+-rw-r--r-- 1 sridhar sridhar    0 Mar 12 18:52 demo.txt
+drwxr-xr-x 2 sridhar sridhar 4096 Mar 12 18:53 test
+drwxr-xr-x 3 sridhar sridhar 4096 Mar 12 18:53 .
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ chmod u=rwx,g=rw-,o=r-- demo.txt
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$ ls -lrt
+total 4
+-rwxrw-r-- 1 sridhar sridhar    0 Mar 12 18:52 demo.txt
+drwxr-xr-x 2 sridhar sridhar 4096 Mar 12 18:53 test
+sridhar@DESKTOP-LHMTJ2I:~/DevFolder$
